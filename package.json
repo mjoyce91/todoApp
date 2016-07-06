@@ -14,5 +14,8 @@
     "morgan": "~1.7.0",
     "sails-disk": "^0.10.10",
     "serve-favicon": "~2.3.0"
+  },
+  "scripts": {
+    "start": "sails lift -1 --port=80"
   }
 }
