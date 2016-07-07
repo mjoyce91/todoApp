@@ -5,7 +5,7 @@ describe('UserController', function() {
     it('should return success', function (done) {
       request(sails.hooks.http.app)
         .get('/user')
-        .expect(500, done);
+        .expect(200, done);
     });
   });
 
