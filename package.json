@@ -2,6 +2,10 @@
   "name": "todoApp",
   "version": "0.0.0",
   "private": true,
+  "engineStrict" : true,
+  "engines": {
+    "node": "4.4.6"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -12,8 +16,14 @@
     "express": "~4.13.4",
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
+    "sails": "^0.12.3",
     "sails-disk": "^0.10.10",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "sails-memory": "^0.10.5",
+    "supertest": "^1.1.0"
   },
   "scripts": {
     "start": "sails lift -1 --port=3000",
