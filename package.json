@@ -2,12 +2,14 @@
   "name": "todoApp",
   "version": "0.0.0",
   "private": true,
-  "engineStrict" : true,
+  "engineStrict": true,
   "engines": {
     "node": "4.4.6"
   },
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "sails lift -1 --port=3000",
+    "debug": "node debug app.js",
+    "test": "PORT=9999 NODE_ENV=test mocha -R spec -b --recursive"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
@@ -18,16 +20,12 @@
     "morgan": "~1.7.0",
     "sails": "^0.12.3",
     "sails-disk": "^0.10.10",
+    "sails-dynamodb": "^0.12.2",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
     "mocha": "^2.3.4",
     "sails-memory": "^0.10.5",
     "supertest": "^1.1.0"
-  },
-  "scripts": {
-    "start": "sails lift -1 --port=3000",
-    "debug": "node debug app.js",
-    "test": "PORT=9999 NODE_ENV=test mocha -R spec -b --recursive"
   }
 }
