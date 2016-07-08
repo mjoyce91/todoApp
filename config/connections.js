@@ -82,16 +82,6 @@ module.exports.connections = {
   //   database: 'YOUR_POSTGRES_DB' //optional
   // }
 
-  //DYNAMODB ADAPTER//
-
-    dynamoDb: {
-      adapter: "sails-dynamodb",
-      accessKeyId: process.env.DYNAMO_ACCESS_KEY_ID,
-      secretAccessKey: process.env.DYNAMO_SECRET_ACCESS_KEY,
-      region: "us-east-1",
-    }
-
-
   /***************************************************************************
   *                                                                          *
   * More adapters: https://github.com/balderdashy/sails                      *
